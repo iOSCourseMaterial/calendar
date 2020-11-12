@@ -1,0 +1,55 @@
+/* A little pizzazz borrowed from http://bettermotherfuckingwebsite.com/, because why not? */
+body{margin:1.5em;
+auto;max-width:75em;line-height:1.6;font-size:16px;color:#444;padding:0
+10px}h1,h2,h3{line-height:1.2}
+
+/* Syllabus site specific styling: */
+
+/* Via. https://nathanfriend.io/2018/04/27/fantastic-fast-fonts-with-system-ui.html
+ * This is the same method Airtable uses, so our syllabus site will both match the
+ * data from Airtable and just look nice everywhere.
+ * */
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif
+}
+
+header {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+@media screen and (min-width: 35em) {
+  header {
+    align-items: end;
+  }
+}
+
+header #rose-hulman-logo {
+  max-width: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: block;
+}
+
+@media screen and (min-width: 35em) {
+  header nav ul li{
+    display: inline-block;
+  }
+  header nav ul li+li {
+    margin-left: 0.75em;
+  }
+}
+
+@media screen and (min-width: 62.5em) {
+  #main_calendars {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+}
